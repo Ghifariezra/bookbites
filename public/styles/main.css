@@ -10,10 +10,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--font-family);
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   font-size: var(--font-size-xs);
   overflow-x: hidden;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  body {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: var(--font-size-md);
+  }
 }

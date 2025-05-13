@@ -4,11 +4,26 @@ section#footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 32px;
-    padding: 32px 0px;
+    margin: 0px 16px;
+    padding: 16px 0px;
     border-top: 1px solid #142548;
     font-size: var(--font-size-sm);
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
+
 p.copyright {
     font-size: var(--font-size-sm);
+    text-align: center; /* Center-align text for better readability */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    section#footer {
+        margin: 0px 8px;
+        padding: 12px 0px;
+        font-size: var(--font-size-xs); /* Use a smaller font size */
+    }
+    p.copyright {
+        font-size: var(--font-size-xs);
+    }
 }

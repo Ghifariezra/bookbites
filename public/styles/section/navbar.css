@@ -17,12 +17,14 @@ section#nav .menu-bar {
   display: flex;
   justify-content: end;
   align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 16px; /* Add spacing between items */
 }
 section#nav .menu-bar form {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
 /* Search */
 section#nav .menu-bar form .search {
@@ -37,11 +39,6 @@ section#nav .menu-bar form .search {
 section#nav .menu-bar form .search .search-input::placeholder {
   color: var(--outline-border-color);
 }
-/* 
-  ----Remove X Icon----
-  Reference:
-  https://medium.com/@rion.mrk/how-to-remove-x-icon-from-search-input-field-or-input-type-search-db3c808405fb
-*/
 section#nav .menu-bar form .search .search-input::-webkit-search-decoration,
 section#nav .menu-bar form .search .search-input::-webkit-search-cancel-button,
 section#nav .menu-bar form .search .search-input::-webkit-search-results-button,

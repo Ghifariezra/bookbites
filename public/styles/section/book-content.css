@@ -1,39 +1,37 @@
 @import url("../var.css");
 
+/* Base Styles (Mobile First) */
 section#book-content {
   display: flex;
   flex-direction: column;
-  margin: 0px 64px;
-  padding: 64px 0px;
-  gap: 32px;
+  margin: 0px 16px;
+  padding: 32px 0px;
+  gap: 16px;
 }
 section#book-content .books {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 24px;
+  gap: 16px;
 }
 section#book-content .books .image {
-  height: 168px;
-  grid-column: span 2;
+  height: 120px;
+  grid-column: span 5;
   box-shadow: rgba(3, 13, 33, 0.2) 0px 6px 4px 0px;
 }
 section#book-content .books .image img {
-  height: 100%;
+  height: 90%;
   width: 100%;
   object-fit: fill;
   border-radius: 4px;
 }
 section#book-content .books .content {
-  /* border: 1px solid #142548; */
-  grid-column: span 10;
-}
-section#book-content .books .content {
+  grid-column: span 7;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 h3 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-md);
   font-weight: 700;
   color: var(--primary-color);
   text-decoration: underline;
